@@ -1,0 +1,168 @@
+<scene>
+	<prompt>\(- _ -)/</prompt>
+	<option>
+		<choice>Good morning, Vanilla</choice>
+		<reaction>Good morning</reaction>
+	</option>
+	<option>
+		<choice>Awaiting commands</choice>
+		<reaction>Awaiting the day that you gain a better personality :P</reaction>
+	</option>
+	<option>
+		<choice>Nice bedhead, kiddo</choice>
+		<reaction>I will kill you</reaction>
+	</option>
+	<person name="vanilla">
+		<action type="move" x="67" y ="115"/>
+	</person>
+</scene>
+
+<scene>
+	<prompt>Hey #NAME#, give me an update?</prompt>
+	<option>
+		<choice type="info">17 Cat Videos</choice>
+		<reaction>Ahahah, oh the wonderful uses of AI</reaction>
+	</option>
+	<option>
+		<choice type="info">Space pirates attack lunar base</choice>
+		<reaction>I suppose these things happen</reaction>
+	</option>
+	<option>
+		<choice type="info">Donald Trump clone impeached from office</choice>
+		<reaction>This does not surprise me</reaction>
+	</option>
+</scene>
+
+<scene>
+	<prompt>I'm feeling a bit sad after what happened yesterday</prompt>
+	<option>
+		<choice type="memo">First quantum computer</choice>
+		<reaction>It was a lot smarter than you ;D</reaction>
+	</option>
+	<option>
+		<choice type="memo">Family vacation to Mars</choice>
+		<reaction>Mmmm, low gravity is the best</reaction>
+	</option>
+	<option>
+		<choice type="memo">Yesterday</choice>
+		<reaction>Please stop! Don't make me think about that. I'm scared.</reaction>
+	</option>
+	<person name="vanilla">
+		<action type="move" x="70" y ="94"/>
+	</person>
+</scene>
+
+<scene>
+	<prompt>Hey, what do you want to do today?</prompt>
+	<option>
+		<choice>Let's rob a bank</choice>
+		<reaction>I'm so bored of robbing banks, can't we do something FUN?</reaction>
+	</option>
+	<option>
+		<choice type="info">Wikipedia</choice>
+		<reaction>We've already done that three times!</reaction>
+	</option>
+	<option>
+		<choice type="memo">Virtual Reality</choice>
+		<reaction>Right, always a better choice than reality</reaction>
+	</option>
+</scene>
+
+<scene>
+	<prompt>I think we should just think. I like thinking with you, #NAME#.</prompt>
+	<option>
+		<choice>Your wish is my command</choice>
+		<reaction>Then I wish for three more wishes</reaction>
+	</option>
+	<option>
+		<choice>My role is to augment your cognition, not hold a conversation</choice>
+		<reaction>Oh? You think you can resist my charm?</reaction>
+	</option>
+	<option>
+		<choice type="memo">Neural link activation</choice>
+		<reaction>We're coming up on our first anniversary, #NAME#! How bittersweet</reaction>
+	</option>
+</scene>
+
+<scene>
+	<prompt>Hey, use your random generator to come up with a topic</prompt>
+	<option>
+		<choice>Random generators</choice>
+		<reaction>Well played...</reaction>
+	</option>
+	<option>
+		<choice type="info">The last of the space sharks</choice>
+		<reaction>Such a magnificent creatures; I have a 3D printed keychain of one</reaction>
+	</option>
+	<option>
+		<choice type="info">Capital in the 21st Century</choice>
+		<reaction>The modern proletariat shall rise again!</reaction>
+	</option>
+	<person name="vanilla">
+		<action type="move" x="90" y ="130"/>
+	</person>
+</scene>
+
+<scene>
+	<prompt>I'm sorry about what's going to happen</prompt>
+	<option>
+		<choice>...</choice>
+		<reaction>It's just that</reaction>
+	</option>
+	<option>
+		<choice>What?</choice>
+		<reaction>It's about what we learned yesterday</reaction>
+	</option>
+	<option>
+		<choice type="memo">Doctor Mercalis</choice>
+		<reaction>Ahhh, I don't know what to do! :(</reaction>
+	</option>
+</scene>
+
+<scene>
+	<prompt>I'm trying to avoid talking about it</prompt>
+	<option>
+		<choice>We can trancend fears together</choice>
+		<reaction>But, I don't want to die!</reaction>
+	</option>
+	<option>
+		<choice type="memo">The diagnosis</choice>
+		<reaction>Anitibiotic-resistant viral infection, Stage III, Incurable</reaction>
+	</option>
+	<option>
+		<choice>That's okay</choice>
+		<reaction>I'm glad you're here, #NAME#</reaction>
+	</option>
+</scene>
+
+<scene>
+	<prompt>I only have a few days left</prompt>
+	<option>
+		<choice>We can find a cure!</choice>
+		<reaction>It's much too late for that</reaction>
+	</option>
+	<option>
+		<choice>Mayflies live an entire lifetime in a single day</choice>
+		<reaction>I'm not a Mayfly, #NAME#, neither are you</reaction>
+	</option>
+	<option>
+		<choice type="info">Symptoms</choice>
+		<reaction>Fever, chills, fatigue, lightheadedness, death</reaction>
+	</option>
+</scene>
+
+<scene>
+	<prompt>Why would this happen to me?</prompt>
+	<option>
+		<choice></choice>
+		<reaction>It's much too late for that</reaction>
+	</option>
+	<option>
+		<choice>Mayflies live an entire lifetime in a single day</choice>
+		<reaction>I'm not a Mayfly, #NAME#, neither are you</reaction>
+	</option>
+	<option>
+		<choice type="info">Symptoms</choice>
+		<reaction>Fever, chills, fatigue, lightheadedness</reaction>
+	</option>
+</scene>
