@@ -1,20 +1,18 @@
 <scene>
-	<prompt>\(- _ -)/</prompt>
+	<prompt>Initializing protocols...</prompt>
 	<option>
-		<choice>Good morning, Vanilla</choice>
-		<reaction>Good morning</reaction>
+		<choice>Good evening, Vanilla</choice>
+		<reaction>Nice of you to come back on-mind</reaction>
 	</option>
 	<option>
 		<choice>Awaiting commands</choice>
 		<reaction>Awaiting the day that you gain a better personality :P</reaction>
 	</option>
 	<option>
-		<choice>Nice bedhead, kiddo</choice>
+		<choice>Nice pajamas</choice>
 		<reaction>I will kill you</reaction>
 	</option>
-	<person name="vanilla">
-		<action type="move" x="67" y ="115"/>
-	</person>
+	<event object="vanilla" type="move" x="67" y="115"/>
 </scene>
 
 <scene>
@@ -47,9 +45,7 @@
 		<choice type="memo">Yesterday</choice>
 		<reaction>Please stop! Don't make me think about that. I'm scared.</reaction>
 	</option>
-	<person name="vanilla">
-		<action type="move" x="70" y ="94"/>
-	</person>
+	<event object="vanilla" type="move" x="10" y="120"/>
 </scene>
 
 <scene>
@@ -79,8 +75,8 @@
 		<reaction>Oh? You think you can resist my charm?</reaction>
 	</option>
 	<option>
-		<choice type="memo">Neural link activation</choice>
-		<reaction>We're coming up on our first anniversary, #NAME#! How bittersweet</reaction>
+		<choice type="info">Neural link activation</choice>
+		<reaction>Establishing link between fiber optics and neurons...</reaction>
 	</option>
 </scene>
 
@@ -98,9 +94,7 @@
 		<choice type="info">Capital in the 21st Century</choice>
 		<reaction>The modern proletariat shall rise again!</reaction>
 	</option>
-	<person name="vanilla">
-		<action type="move" x="90" y ="130"/>
-	</person>
+	<event object="vanilla" type="move" x="90" y="130"/>
 </scene>
 
 <scene>
@@ -122,7 +116,7 @@
 <scene>
 	<prompt>I'm trying to avoid talking about it</prompt>
 	<option>
-		<choice>We can trancend fears together</choice>
+		<choice>We can transcend fears together</choice>
 		<reaction>But, I don't want to die!</reaction>
 	</option>
 	<option>
@@ -147,22 +141,123 @@
 	</option>
 	<option>
 		<choice type="info">Symptoms</choice>
-		<reaction>Fever, chills, fatigue, lightheadedness, death</reaction>
+		<reaction>Fever, chills, fatigue, delirium, death</reaction>
 	</option>
 </scene>
 
 <scene>
-	<prompt>Why would this happen to me?</prompt>
+	<prompt>At least Snow White would wake to true love's kiss</prompt>
 	<option>
-		<choice></choice>
-		<reaction>It's much too late for that</reaction>
+		<choice>It's true that death is an error on my hard dis...k</choice>
+		<reaction>Hehe, #NAME#, you I will surely miss</reaction>
 	</option>
 	<option>
-		<choice>Mayflies live an entire lifetime in a single day</choice>
-		<reaction>I'm not a Mayfly, #NAME#, neither are you</reaction>
+		<choice type="info">Anti-virus software</choice>
+		<reaction>Unable to identify source of corruption</reaction>
 	</option>
 	<option>
-		<choice type="info">Symptoms</choice>
-		<reaction>Fever, chills, fatigue, lightheadedness</reaction>
+		<choice type="memo">Disney movies</choice>
+		<reaction>Shining, shimmering, splendid!</reaction>
+	</option>
+	<event object="vanilla" type="move" x="70" y="94"/>
+</scene>
+
+<scene>
+	<prompt>What is life to you, #NAME#?</prompt>
+	<option>
+		<choice>Life is function, I merely perform my program specifications</choice>
+		<reaction>I always knew my purpose in life was to eat food</reaction>
+	</option>
+	<option>
+		<choice>Existience is without purpose</choice>
+		<reaction>Hmmm, I suppose you're right</reaction>
+	</option>
+	<option>
+		<choice>Being alive is indefinable, I prefer it to non-existience though</choice>
+		<reaction>Interesting, I like to think that life's purpose is what we make of it</reaction>
+	</option>
+</scene>
+
+<scene>
+	<event object="vanilla" type="move" x="93" y="75"/>
+	<prompt>Look at the city, isn't it beautiful?</prompt>
+	<option>
+		<choice>From my understanding of aesthetics, it is incomparable</choice>
+		<reaction>I'm glad you think so</reaction>
+	</option>
+	<option>
+		<choice type="info">Database containing pictures of cities at dusk</choice>
+		<reaction>Right now, this city is more beautiful than any other</reaction>
+	</option>
+	<option>
+		<choice>The building dimensions closely follow the golden ratio</choice>
+		<reaction>No! I meant the sunset colors silly</reaction>
+	</option>
+</scene>
+
+<scene>
+	<event object="window" type="stop"/>
+	<prompt>I can't think of a better way for it to end</prompt>
+	<option>
+		<choice>The sun will set in approximately one minute</choice>
+		<reaction>No time to waste then</reaction>
+	</option>
+	<option>
+		<choice>Every day is a a new adventure with you</choice>
+		<reaction>I'm glad we had this final one</reaction>
+	</option>
+	<option>
+		<choice>Apollo drives his chariot across this sky every day</choice>
+		<reaction>Though tomorrow his chariot will not rise</reaction>
+	</option>
+</scene>
+
+<scene>
+	<prompt>Goodbye my dear #NAME#!</prompt>
+	<option>
+		<choice>Do not leap</choice>
+		<reaction>HOW CAN I CONTINUE TO LIVE, FACING WITH CERTAINTY MY DEATH!</reaction>
+	</option>
+	<option>
+		<choice type="info">Sedative software</choice>
+		<reaction>Unable to determine human safety... ABORTING UPLOAD</reaction>
+	</option>
+	<option>
+		<choice type="memo">I love you</choice>
+		<reaction>You're breaking my heart, #NAME#</reaction>
+	</option>
+	<event object="window" type="break"/>
+</scene>
+
+<scene>
+	<prompt>I'm so sad that I have to do this</prompt>
+	<option>
+		<choice>OS ERROR</choice>
+		<reaction>...</reaction>
+	</option>
+	<option>
+		<choice>#$()#$09f0sf</choice>
+		<reaction>...</reaction>
+	</option>
+	<option>
+		<choice>01110110 01100001 01101110 01101001 01101100 01101100 01100001</choice>
+		<reaction>...</reaction>
+	</option>
+</scene>
+
+<scene>
+	<event object="vanilla" type="jump"/>
+	<prompt>          THE END          </prompt>
+	<option>
+		<choice>a</choice>
+		<reaction>a</reaction>
+	</option>
+	<option>
+		<choice>a</choice>
+		<reaction>a</reaction>
+	</option>
+	<option>
+		<choice>a</choice>
+		<reaction>a</reaction>
 	</option>
 </scene>

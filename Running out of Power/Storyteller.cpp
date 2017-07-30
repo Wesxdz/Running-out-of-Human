@@ -13,7 +13,6 @@ Storyteller::Storyteller() :
 	thoughts = { 180, 30, Assets::manager->getFont("habbo.ttf", 15) };
 	thoughts.SetText(story.currentScene.prompt);
 
-	mComponents.push_back(new Window);
 	Door* door = new Door;
 	mComponents.push_back(door);
 	mElements["door"] = door;
@@ -21,6 +20,11 @@ Storyteller::Storyteller() :
 	Button* button = new Button;
 	button->controls = door;
 	mComponents.push_back(button);
+
+	Window* window = new Window;
+	mComponents.push_back(window);
+	mElements["window"] = window;
+
 
 	Person* vanilla = new Person;
 	vanilla->mAnimations.push_back(Animation::Loop(new Spritesheet(Assets::manager->getTexture("vanilla.png"), 2), 500));
@@ -52,6 +56,7 @@ void Storyteller::Update(int dt)
 			pause = 0;
 			if (moveNext) {
 				Mix_PlayChannel(3, Assets::manager->getSound("think.wav"), 0);
+				story.Actions(story.mCurrentScene);
 				thoughts.SetText(story.currentScene.prompt);
 				pause = story.currentScene.prompt.length() * 80;
 				moveNext = false;
@@ -72,10 +77,10 @@ void Storyteller::Update(int dt)
 
 void Storyteller::Draw()
 {
-	thoughts.Render(10, 10);
 	for (Component* component : mComponents) {
 		component->Draw();;
 	}
+	thoughts.Render(10, 10);
 	if (!pause) {
 		if (blink > 0) choiceType.Render(0, 50);
 		for (int i = 0; i < 3; i++) {

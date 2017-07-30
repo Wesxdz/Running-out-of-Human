@@ -19,7 +19,6 @@ DialogueManager::DialogueManager() :
 
 void DialogueManager::LoadNext()
 {
-	Actions(mCurrentScene);
 	if (mCurrentScene->next_sibling("scene")) {
 		mCurrentScene = mCurrentScene->next_sibling("scene");
 		FillScene();
@@ -50,19 +49,20 @@ void DialogueManager::FillScene()
 
 void DialogueManager::Actions(xml_node<char>* search)
 {
-	xml_node<>* person = search->first_node("person");
-	while (person) {
-		xml_node<>* action = person->first_node("action");
-		while (action) {
-			if (std::string(action->first_attribute("type")->value()) == "move") {
-				std::string args[2];
-				args[0] = action->first_attribute("x")->value();
-				args[1] = action->first_attribute("y")->value();
-				mStoryteller->mElements[person->first_attribute("name")->value()]->Event("move", 2, &args[0]);
-			}
-			action = action->next_sibling("action");
+	xml_node<>* scriptEvent = search->first_node("event");
+	while (scriptEvent) {
+		std::string object = scriptEvent->first_attribute("object")->value();
+		std::string type = scriptEvent->first_attribute("type")->value();
+		if (type == "move") {
+			std::string args[2];
+			args[0] = scriptEvent->first_attribute("x")->value();
+			args[1] = scriptEvent->first_attribute("y")->value();
+			mStoryteller->mElements[object]->Event("move", 2, &args[0]);
 		}
-		person = person->next_sibling("person");
+		else {
+			mStoryteller->mElements[object]->Event(type);
+		}
+		scriptEvent = scriptEvent->next_sibling("event");
 	}
 }
 

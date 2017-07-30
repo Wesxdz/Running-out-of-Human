@@ -1,5 +1,7 @@
 #include "Person.h"
 
+#include "Game.h"
+
 Person::Person()
 {
 }
@@ -25,5 +27,8 @@ void Person::Event(std::string name, int numArgs, std::string * args)
 {
 	if (name == "move") {
 		mLocation = SDL_Point{ std::stoi(args[0]), std::stoi(args[1]) };
+	}
+	if (name == "jump") {
+		Game::inst->Exit();
 	}
 }

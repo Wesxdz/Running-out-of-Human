@@ -35,13 +35,13 @@ public:
 	Scene currentScene;
 	Storyteller* mStoryteller;
 	const char* types[3];
+	void Actions(rapidxml::xml_node<>* search);
+	rapidxml::xml_node<>* mCurrentScene;
 private:
 	rapidxml::xml_document<> DOM;
 	rapidxml::file<> mStoryFile;
-	rapidxml::xml_node<>* mCurrentScene;
 
 private:
 	void FillScene();
-	void Actions(rapidxml::xml_node<>* search);
 	std::string PostProcess(std::string text);
 };

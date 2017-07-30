@@ -8,7 +8,6 @@ Home::Home()
 {
 	mBackground = Texture{ Assets::manager->getTexture("background.png") };
 	mMusic = Assets::manager->getSound("Early.ogg");
-	//Mix_SetDistance(0, 200);
 	Mix_PlayChannel(0, mMusic, -1);
 }
 
