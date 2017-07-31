@@ -16,6 +16,7 @@ public:
 private:
 	Paragraph hint;
 	Paragraph entry;
+	Paragraph controls;
 	std::string name;
 };
 

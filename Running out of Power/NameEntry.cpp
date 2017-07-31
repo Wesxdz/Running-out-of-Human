@@ -11,6 +11,9 @@ NameEntry::NameEntry()
 	hint = Paragraph{ 200, 40, Assets::manager->getFont("habbo.ttf", 15) };
 	hint.mVertical = Align::TOP;
 	entry = hint;
+	controls = hint;
+	controls.mWidth = 160;
+	controls.SetText("Use the right/left arrow keys and enter to play");
 	hint.SetText("ENTER NAME");
 	entry.mColor = SDL_Color{ 58, 227, 209 };
 	SDL_StartTextInput();
@@ -53,5 +56,6 @@ void NameEntry::Draw()
 	SDL_RenderClear(Game::inst->renderer);
 	hint.Render(0, 60);
 	entry.Render(0, 90);
+	controls.Render(20, 160);
 	SDL_RenderPresent(Game::inst->renderer);
 }

@@ -111,7 +111,7 @@ bool Storyteller::Input(SDL_Event* event)
 				return true;
 			}
 		}
-		if (pause) { pause = 1; }
+		if (pause && event->key.keysym.sym != SDLK_RETURN) { pause = 1; }
 		break;
 	}
 	for (Component* component : mComponents) {
