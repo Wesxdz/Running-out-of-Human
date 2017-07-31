@@ -148,7 +148,7 @@
 <scene>
 	<prompt>At least Snow White would wake to true love's kiss</prompt>
 	<option>
-		<choice>It's true that death is an error on my hard dis...k</choice>
+		<choice>It's true that death is an error on my memory dis...k</choice>
 		<reaction>Hehe, #NAME#, you I will surely miss</reaction>
 	</option>
 	<option>
@@ -174,12 +174,13 @@
 	</option>
 	<option>
 		<choice>Being alive is indefinable, I prefer it to non-existience though</choice>
-		<reaction>Interesting, I like to think that life's purpose is what we make of it</reaction>
+		<reaction>Interesting, I like to think that life is what we make of it</reaction>
 	</option>
 </scene>
 
 <scene>
-	<event object="vanilla" type="move" x="93" y="75"/>
+	<event object="window" type="stop"/>
+	<event object="vanilla" type="move" x="91" y="75"/>
 	<prompt>Look at the city, isn't it beautiful?</prompt>
 	<option>
 		<choice>From my understanding of aesthetics, it is incomparable</choice>
@@ -196,7 +197,6 @@
 </scene>
 
 <scene>
-	<event object="window" type="stop"/>
 	<prompt>I can't think of a better way for it to end</prompt>
 	<option>
 		<choice>The sun will set in approximately one minute</choice>
@@ -207,7 +207,7 @@
 		<reaction>I'm glad we had this final one</reaction>
 	</option>
 	<option>
-		<choice>Apollo drives his chariot across this sky every day</choice>
+		<choice>Apollo drives his chariot across the skies</choice>
 		<reaction>Though tomorrow his chariot will not rise</reaction>
 	</option>
 </scene>
